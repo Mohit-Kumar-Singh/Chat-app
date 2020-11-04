@@ -1,20 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-// import 'user.dart';
-// import 'package:fluttershare/pages/activity_feed.dart';
-// import 'package:fluttershare/pages/create_account.dart';
-// import 'package:fluttershare/pages/profile.dart';
-// import 'package:fluttershare/pages/search.dart';
-// import 'package:fluttershare/pages/timeline.dart';
-// import 'package:fluttershare/pages/upload.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'activity_feed.dart';
 import 'create_account.dart';
 import 'profile.dart';
 import 'package:chatApp/pages/search.dart';
 import 'upload.dart';
-
 import 'package:chatApp/models/user.dart';
 
 final GoogleSignIn googleSignIn = GoogleSignIn();
@@ -153,10 +145,6 @@ class _HomeState extends State<Home> {
             BottomNavigationBarItem(icon: Icon(Icons.account_circle)),
           ]),
     );
-    // return RaisedButton(
-    //   child: Text('Logout'),
-    //   onPressed: logout,
-    // );
   }
 
   Scaffold buildUnAuthScreen() {
